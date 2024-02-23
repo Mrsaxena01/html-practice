@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: blue;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 100vh;
+    }
+    .container {
+      position: relative;
+      width: 350px;
+      height: 70px;
+      box-shadow: 0px 10px 10px black;
+      transition: 2s;
+      overflow: hidden;
+    }
+        .container span:nth-child(1){
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #0c002b,#f80909 );
+      animation: anim1 2s linear infinite;
+      animation-delay: 0.2s;
+      }
+      @keyframes anim1{
+        0%{
+          transform: translatex(-100%);
+      }
+100%{
+          transform : translatex(100%);
+          }
+      }
+      .container span:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom,#0e0558,#29d9ec);
+         animation: anim2 2s linear infinite;
+         animation-delay: 0.2s;
+      }
+      @keyframes anim2 {
+        0%{
+          transform: translatey(-100%);
+        }
+        100%{
+          transform: translatey(100%);
+        }
+      }
+      .container span:nth-child(3){
+        position: absolute;
+      bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,#060436,#f80909);
+        animation: anim3 2s linear infinite;
+        animation-delay: 0.2s;
+      }
+      @keyframes anim3{
+        0%{
+          transform: translatex(100%);
+        }
+        100%{
+          transform: translatex(-100%);
+        }
+      }
+      .container span:nth-child(4){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top,#040849,#2cf4ea);
+        animation: anim4 2s linear infinite;
+        animation-delay: 0.2s;
+      }
+      @keyframes anim4{
+        0%{
+          transform: translatey(100%);
+        }
+        100%{
+          transform: translatey(-100%);
+        }
+      }
+    h1 {
+      font-family: Times New Roman;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      font-weight: 200;
+      color: white;
+    }
+    .container:hover {
+      background: yellow;
+      box-shadow: 0px 25px 50px yellow;
+    }
+    h1:hover {
+      color: blue;
+    }
+    .container::before {
+      position: absolute;
+      content: '';
+      top: 2px;
+      left: 2px;
+      width: 50%;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <h1>sonu kumar</h1>
+    </div>
+  </body>
+</html>

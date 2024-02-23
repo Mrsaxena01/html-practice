@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fan</title>
+  <style>
+    body{
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      height: 100vh;
+      background: #3a3a3e;
+    }
+    .container{
+      width: 350px;
+      height: 325px;
+      animation: anim 0.005s linear infinite;
+      animation-delay: 0.2s;
+      margin-left: 10px;
+    }
+    @keyframes anim {
+      100%{
+        transform: rotate(-360deg);
+      }
+    }
+    .container:hover{
+      animation: none;
+    }
+    .rect1{
+      width: 50px;
+      height: 130px;
+      margin: auto;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: white;
+    }
+    .mini{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rect2{
+      width: 130px;
+      height: 50px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 10px;
+      background: white;
+    }
+    .circle{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background: white;
+    }
+    .rect3{
+      width: 130px;
+      height: 50px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 20px;
+      background: white;
+    }
+    .rect4{
+      width: 50px;
+      height: 130px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background: white;
+      margin: auto;
+    }
+    .btn{
+      width: 120px;
+      height: 80px;
+      display: flex;
+      flex-direction: rows;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px gray;
+      margin-left: 120px;
+    }
+    .switchon{
+      width: 60px;
+      height: 30px;
+      font-style: bold;
+      font-weight: 800;
+    }
+    .switchon:hover{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <br><br><br><br>
+  <div class="container">
+    <div class="rect1"></div>
+    <div class="mini">
+      <div class="rect2"></div>
+      <div class="circle"></div>
+      <div class="rect3"></div>
+    </div>
+    <div class="rect4"></div>
+    </div>
+  <br> <br>
+  <br> <br>
+  <div class="btn">
+  <button class="switchon">ON</button>
+  </div>
+</body>
+</html>

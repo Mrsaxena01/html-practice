@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pentagon</title>
+    <style>
+        .pentagon {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .pentagon:before,
+        .pentagon:after {
+            content: "";
+            position: absolute;
+            border: 50px solid transparent;
+        }
+
+        .pentagon:before {
+            border-bottom-color: black;
+            top: -10px;
+        }
+
+        .pentagon:after {
+            border-top-color: black;
+            bottom: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pentagon"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>solar system</title>
+    <style>
+      body {
+       margin:0;
+       height: 100eh;
+       display: flex;
+       background:black;
+       overflow:hidden;
+       align-items: center;
+       justify-content: center;
+      }
+      .container {
+        font-size: 10px;
+        position:relative;
+        width: 40em;
+        height: 40em;
+      }
+      .sun {
+        position: absolute;
+        width:10em;
+        height:10em;
+        background:yellow;
+        left:15em;
+        top:15em;
+        border-radius:50%;
+      }
+      .earth,.moon{
+        position: absolute;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sun"></div>
+      <div class="earth">
+        <div class="moon"></div>
+      </div>
+    </div>
+  </body>
+</html>

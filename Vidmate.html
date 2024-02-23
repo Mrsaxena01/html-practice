@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vidmate audiobook</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #fbc069,#fb9f69);
+    }
+    .circle1 {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: black;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: animate 1s linear infinite;
+      animation-delay: 0.5s;
+    }
+    .circle2 {
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      border: 5px solid blue;
+      background: linear-gradient(#fb7715ae,#eaf089df);
+      z-index: -1;
+      animation: animate 15s linear infinite;
+      animation-delay: 0.5s;
+    }
+    .circle3 {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 10px solid rgb(200,50,50);
+      background: #0a0a71;
+      /* z-index:; */
+      animation: animate 5s linear infinite;
+      animation-delay: 0.5s;
+    }
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle1">
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+    </div>
+  </div>
+</body>
+</html>

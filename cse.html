@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>𝐬𝐨𝐧𝐮 𝐬𝐚𝐱𝐞𝐧𝐚</title>
+<!--   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="logo (1).png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Times New Roman;
+    }
+    body {
+      background: #fff;
+    }
+
+    .nav {
+      background: #3bd9ec;
+      height: 36px;
+    }
+    a:hover {
+      color: red;
+    }
+    .head {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 200%;
+      font-family;
+      normal;
+    }
+    div.sticky {
+      /* display:flex; */
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      background: #f2f2f2;
+      z-index: 1;
+    }
+    .header {
+      display: flex;
+    }
+    .img1 {
+      height: 80px;
+      width: 80px;
+      margin-left: 10px;
+      margin-top: 5px;
+      border-radius: 50%;
+    }
+    .img1:hover{
+      transform: scale(1.04);
+      cursor: pointer;
+      filter: brightness(90%) hue-rotate(50%);
+    }
+    .h2 {
+      color: blue;
+      /* display: flex; */
+      /* margin-left: 100px; */
+    }
+    .learn {
+      color: #da1226;
+      font-size: 25px;
+      text-decoration: underline;
+      text-shadow: 1px 1px 4px gray;
+    }
+    ul {
+      margin: 0px;
+      padding: 0;
+      font-size: 13px;
+      list-style: none;
+      font-family: Arial,Sans-Serif;
+      height: 36px;
+      background: black;
+      line-height: 36px;
+      border-radius: 3px;
+      display: sticky;
+    }
+    li {
+      float: left;
+      border-right: 1px solid #156ee2;
+    }
+    a {
+      display: block;
+      padding: 0 12px;
+      color: white;
+      text-decoration: none;
+    }
+    .cod {
+      text-align: justify;
+      margin-top: 10px;
+      margin-left: 25px;
+      margin-right: 25px;
+      line-height: 25px;
+      font-style: italic;
+    }
+    .bu {
+      display: flex;
+      justify-content: space-between;
+    }
+    marquee {
+      z-index: -1;
+    }
+    .button {
+      width: 100px;
+      height: 40px;
+      margin-left: 80px;
+      border-radius: 4px;
+      border: 1px solid black;
+      margin-top: 5px;
+      background: #222;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.5s;
+    }
+    #course {
+      color: white;
+      font-style: bold;
+      padding: 1px;
+      padding-top: 10px;
+    }
+    .explore {
+      width: 100px;
+      height: 40px;
+      margin-right: 70px;
+      border-radius: 4px;
+      border: 1px solid black;
+      margin-top: 5px;
+      background: #d4cdcd;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.5s;
+    }
+    #blog {
+      color: black;
+      font-style: bold;
+      padding: 1px;
+      padding-top: 10px;
+    }
+    .rec {
+      font-size: 200%;
+    }
+    .box {
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      border: 1px solid #726969;
+      box-sizing: border-box;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 25px 50px 75px gray;
+    }
+    .img2 {
+      border-radius: 3px;
+      width: 100%;
+    }
+    .imglast {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .footer {
+      background: #8c8282;
+      height: 100px;
+      padding-bottom: 120px;
+    }
+    .abpy {
+      font-family: Times New Roman;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding-left: 8px;
+      line-height: 30px;
+    }
+    .pynotes {
+      width: 100px;
+      height: 30px;
+      background: black;
+      display: flex;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+    }
+    .homeicon {
+      height: 100px;
+
+      float: right;
+      padding-left: 30px;
+    }
+    .search {
+      overflow: hidden;
+      float: right;
+      height: 36px;
+      text-align: center;
+      border: 1px solid gray;
+      border-radius: 4px;
+      padding-right: 10px;
+    }
+    @media (min-width:780px) {
+      .course,.course2 {
+        display: flex;
+        gap: 20px;
+        margin: 30px;
+      }
+      .bu {
+        margin: 0 300px 0 300px;
+      }
+      .nav ul li a {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .cod {
+        margin: 10px 40px 0 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky">
+    <div class="header">
+      <img src="logo (1).png" alt="pic" class="img1">
+      <h2 class="head">Welcome to
+        <div class="h2">
+          Sonu Saxena
+        </div>
+      </h2>
+    </div>
+    <div class="nav">
+      <ul>
+        <li> <a href="cse.html">Home</a></li>
+        <li> <a href="about.html">About us</a></li>
+        <li> <a href="#">Products</a></li>
+        <li> <a href="#">Contact</a></li>
+        <li> <a href="Login.html">Sign in</a></li>
+        <input type="search" class="search" placeholder="search">
+      </ul>
+    </div>
+  </div>
+  <!-- <h1 class="h1">Sonu Saxena</h1> -->
+</div>
+
+<br>
+<h1 align="center" class="learn">
+  Learn Coding !
+</h1>
+<p class="cod">
+  <b> Coding instructs computers how to function and what actions to take. Coders need to understand and translate instructions for computers in a language machines can understand. Coding is a part of programming, which is focused on developing a cohesive program, such as a piece of software.
+  </b>
+</p>
+<br> <br>
+<div class="bu">
+  <a href="https://www.mygreatlearning.com/" id="course" class="button">Free Course</a>
+  <a href="#" class="explore" id="blog">Explore Blog</a>
+</div>
+<br> <br>
+<hr>
+<marquee behavior="most" direction="right-left"><b style="color:#1406db">Learn Free Course</b></marquee>
+<br>
+<hr>
+<br>
+<br> <br>
+<center>
+  <div class="rec">
+    recommended course
+  </div>
+
+  <br> <br> <br>
+  <div class="course">
+    <div class="box">
+      <img src="htmltu.png" alt="html" class="img2">
+      <br>
+      free course
+      <br> <br>
+      <h3 style="color:red">Html Tutorial - Full Course</h3>
+      <br>
+      <p class="abpy">
+        HTML (Hypertext Markup Language) is the fundamental building block of the World Wide Web. It provides the structure and content of web pages. HTML specification is maintained by the World Wide Web Consortium (W3C). Understanding HTML is essential for web development as it forms the basis for styling with CSS and interactivity with JavaScript.
+      </p>
+      <br> <br>
+      <button class="pynotes"> <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/html-in-hindi">Read</a></button> <br>
+      <button class="pynotes"> <a href="HTML_Complete_Notes.pdf" align="center">Pdf Notes</a></button>
+      <br>
+    </div>
+    <br> <br><br>   <br> <br><br>
+    <div class="box">
+      <img src="csstu.webp" alt="css" class="img2">
+      <br>
+      free course
+      <br><br>
+      <h3 style="color:red">CSS Tutorial - Full Course</h3>
+      <br>
+      <p class="abpy">
+        CSS (Cascading Style Sheets) is a fundamental web technology used to control the visual layout and appearance of HTML elements on a webpage.
+
+        It allows developers to apply styles such as colors, fonts, spacing, and positioning to enhance the presentation and user experience of a website.
+
+        CSS follows a cascading order of priority, where styles can be defined at different levels, and the most specific rule takes precedence.
+
+        Selectors in CSS help target specific HTML elements or groups of elements, enabling precise styling modifications.
+      </p>
+      <br><br>
+      <button class="pynotes"> <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/css-tutorial">Read</a></button>
+      <br>
+      <button class="pynotes"> <a href="#"align="center">Pdf Notes</a> </button>
+      <br>
+    </div>
+  </div>
+  <br> <br><br>
+  <div class="course2">
+    <div class="box" align="center">
+      <img src="jstu.png" alt="" class="img2"><br>
+      free course
+      <br> <br>
+      <h3 style="color:red">JavaScript Tutorial- Full course </h3>
+      <br>
+      <p class="abpy">
+        JavaScript is a versatile and widely-used programming language, known primarily for its ability to add interactivity and dynamic behavior to web pages. It was created by Brendan Eich while working at Netscape and was first released in 1995. Since then, it has evolved into one of the most popular and important languages for web development.
+      </p>
+      <br> <br>
+      <button class="pynotes"> <a href="https://olympus.mygreatlearning.com/courses/30145">Read</a></button> <br>
+      <button class="pynotes"> <a href="#" align="center">Pdf Notes</a></button>
+      <br>
+    </div>
+    <br> <br><br>
+    <div class="box" align="center">
+      <img src="py.jpeg" alt="" class="img2"><br>
+      free course
+      <br> <br>
+      <h3 style="color:red">Python Tutorial- Full course </h3>
+      <br>
+      <p class="abpy">
+        Python is a versatile and dynamically
+        -typed language, supporting both object
+        -oriented and procedural paradigms. Its
+        extensive standard library and active
+        community make it a popular choice for
+        beginners and experienced developers alike.
+        Python's readability and concise syntax
+        contribute to its widespread adoption and
+        success in the software development industry.
+      </p>
+      <br> <br>
+      <button class="pynotes"> <a href="https://olympus.mygreatlearning.com/courses/12383">Read</a></button> <br>
+      <button class="pynotes"> <a href="#" align="center">Pdf Notes</a></button>
+      <br>
+    </div>
+  </div>
+  <br> <br><br>
+</cente>
+<br> <br><br><br><br> <br> <br><br><br><br><br> <br><br><br><br>
+<footer class="footer">
+  <center>
+    <img src="logo (1).png" alt="pic" class="imglast">
+    <br><b> sonu saxena </b> <br>
+    copyright  &copy; 2022 sonusaxena.com
+    <br>
+   <i class="bx bxl-facebook"></i>
+   <i class="bx bxl-instagram"></i>
+   <i class="bx bxl-youtube"></i>
+   <i class="bx bxl-twitter"></i>
+  </center>
+</footer>
+</body>
+</html>

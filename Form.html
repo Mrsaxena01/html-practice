@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Registration form</title>
+    <style>
+    body {
+      background-color:  ;
+    }
+      legend {
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        background-color: red;
+        font-family: Times New Roman;
+        height: 30px;
+       margin: auto;
+       padding: 1px;
+       width: 60%;
+        }
+      p {
+        border: 1px solid grey;
+        border-radius: 6px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        background-color: yellow ;
+        padding: 10px;
+        color: black;
+      }
+      marquee {
+        border: 2px black;
+        border-radius: 4px;
+        background-color: #7df3d1;
+        height: 5%;
+        font-family: Times New Roman;
+        text-align: center;
+        padding:50px ;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+     <fieldset>
+     <legend>Registration Form</legend>
+     <p>
+     First Name :
+     <input type="text" placeholder="enter your first name" required>
+     </p>
+     <br>
+     <p>
+     Last Name :
+     <input type="text" placeholder="enter your last name" required>
+     </p>
+     <br>
+     <p>
+       Address :
+      <textarea name="Address" id="add" cols="30" rows="2" placeholder="enter your full address"></textarea>
+     </p>
+     <br>
+     <p>
+       Gender :
+       <label for="id1">
+       <input type="radio" name="gender" value="male" required id="id1">Male 
+       </label>
+       <label for="id2">
+       <input type="radio" name="gender" value="female" id="id2" required>Female 
+       </label>
+     </p>
+     <br>
+    <p>
+      G-mail :
+      <input type="email" placeholder="xyz@gmail.com">
+    </p>
+     <br>
+     <p>
+       Date of birth :
+       <input type="date" required placeholder="00/00/0000">
+     </p>
+     <br>
+     <p>
+       Course :
+       <select name="course" id="">
+       <option value="Course">Course</option>
+       <option value="BCA">BCA</option>
+       <option value="DCA">DCA</option>
+       <option value="MCA">MCA</option></option>
+       <option value="BBA">BBA</option>
+       </select>
+     </p>
+     <br>
+     <p>
+       Hobbies :
+       <input type="checkbox">software
+       <input type="checkbox">web developer
+     </p>
+     <br>
+     <p>
+       <input type="submit">
+       <input type="reset" text-align="left">
+     </p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <Marquee background-color="#49ecbd">
+      <font>This is required for all students.</font>
+     </Marquee>
+     
+     </fieldset>
+    </form>
+  </body>
+</html>

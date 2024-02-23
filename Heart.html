@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .heart {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      background-color: rgb(219, 25, 25);
+      box-shadow: -10px 10px 90px rgb(219, 25, 25);
+      transform: rotate(-45deg);
+      animation: anim 0.3s linear infinite;
+    }
+    @keyframes anim {
+      0% {
+        transform: rotate(-45deg) scale(0.8);
+        box-shadow: 0 0 0 rgb(219, 25, 25);
+      }
+      100% {
+        transform: rotate(-45deg) scale(1);
+        box-shadow: 0 0 90px rgb(219, 25, 25);
+      }
+    }
+    .heart:hover {
+      animation: none;
+    }
+    .heart:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(219, 25, 25);
+      border-radius: 50%;
+      top: -50%;
+      box-shadow: -10px -10px 90px rgb(219, 25, 25);
+    }
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(219, 25, 25);
+      border-radius: 50%;
+      right: -50%;
+      box-shadow: 10px 10px 90px rgb(219, 25, 25);
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+</body>
+</html>

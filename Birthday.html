@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #1d2026;
+      font-family: Times New Roman;
+      background-image: url('/sbtebackground.jpg');
+      background-size: cover;
+      animation: anim 2s linear infinite;
+    }
+
+    .box {
+      position: absolute;
+      top: 100px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 100px red,
+        inset 20px 0px 60px blue,
+        inset -20px 0px 60px blue,
+        inset 20px 0px 300px blue,
+        inset -20px 0px 300px blue,
+        0px 0px 50px red,
+        -10px 0px 60px blue,
+        10px 0px 60px blue,
+        20px 0 300px blue;
+      animation: anim1 0.5s linear infinite;
+    }
+
+    @keyframes anim1 {
+      0% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .title {
+      position: relative;
+      background: yellow;
+      top: 200px;
+      height: 50px;
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      box-shadow: 2px 2px 20px red;
+      border: 1px solid white;
+      animation: anim 1s linear infinite;
+    }
+
+    h2 {
+      color: blue;
+      font-size: 30px;
+      font-weight: 2900;
+      letter-spacing: 30px;
+    }
+
+    .title:hover {
+      background: #ff00e5;
+    }
+
+    @keyframes anim {
+      0% {
+        background: red;
+      }
+
+      20% {
+        background: white;
+      }
+
+      40% {
+        background: aqua;
+      }
+
+      60% {
+        background: tomato;
+      }
+
+      80% {
+        background: yellow;
+      }
+
+      100% {
+        background: #00ffb0;
+      }
+
+      10% {
+        background: black;
+      }
+    }
+
+    h1 {
+      font-size: 70px;
+      position: relative;
+      top: 250px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 100px;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="title">
+    <h2>HAPPY BIRTHDAY DEAR</h2>
+  </div>
+  <h1>🎂🎈</h1>
+  <img src="zara.jpg" alt="" class="logo">
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>𝐬𝐨𝐧𝐮 𝐬𝐚𝐱𝐞𝐧𝐚</title>
+    <style>
+      body {
+      align-items: center;
+      justify-content: center;
+        background: black;
+        display: flex;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .container {
+        font-size: 10px;
+        width: 40em;
+        height: 40em;
+        position: relative;
+      }
+      .sun {
+        position: absolute;
+        top: 15em;
+        left: 15em;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        background: #ee0;
+        box-shadow:inset 0em 0 20px white,
+        inset 20em 0 40em yellow ,
+        inset -20em 0 40em yellow,
+        inset 20em 0 8em red,
+        inset -20em 0 8em yellow,
+        0 0 40em white,
+        -1em 0 8em red,
+        1em 0 8em yellow;
+      }
+      .earth, .moon {
+        position: absolute;
+        border-style: solid;
+        border-color: #fff  transparent transparent;
+        border-width: 0.1em 0.1em 0 0;
+        border-radius: 50%;
+      }
+      .earth {
+        top: 5em;
+        left: 5em;
+        width: 30em;
+        height: 30em;
+        animation: sonu 36.5s linear infinite;
+      }
+      .moon {
+        top: 0;
+        right: 0;
+        width: 8em;
+        height: 8em;
+        animation: sonu 5s linear infinite;
+      }
+      .earth::before ,
+      .moon::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+      }
+      .earth::before {
+        top: 2.8em;
+        right: 2.8em;
+        width: 3em;
+        height: 3em;
+        background: aqua;
+      }
+      .moon::before {
+        top: 0.8em;
+        right: 0.2em;
+        width: 1.2em;
+        height: 1.2em;
+        background: silver;
+      }
+      @keyframes sonu {
+        to {
+          transform:rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     <div class="sun"></div>
+    <div class="earth">
+      <div class="moon"></div>
+      </div>
+    </div>
+  </body>
+</html>

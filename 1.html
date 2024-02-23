@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>circle</title>
+  <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+    .container {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .circle {
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: blue;
+      box-shadow: 0px 0px 0px blue;
+      animation: anim 3s   infinite;
+    }
+    @keyframes anim {
+      0%{
+     box-shadow: 0px 0px 0px blue;
+      }
+      100% {
+     box-shadow: 0px 0px 0px 150px blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

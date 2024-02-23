@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+    body {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      min-height: 100vh;
+      background: #23242a;
+    }
+    .box {
+      position: relative;
+      width: 380px;
+      height: 420px;
+      background: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(0deg, transparent,transparent,#45f3ff,#45f3ff,#45feff);
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+    }
+    .box::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(0deg, transparent,transparent,#45f3ff,#45f3ff,#45feff);
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+      animation-delay: -3s;
+    }
+    .borderLine {
+      position: absolute;
+      top: 0;
+      inset: 0;
+    }
+    .borderLine::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(0deg, transparent,transparent,#ff2770,#ff2770,#ff2770);
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+      animation-delay: -1.5s;
+    }
+    .borderLine::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(0deg, transparent,transparent,#ff2770,#ff2770,#ff2770);
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+      animation-delay: -4.5s;
+    }
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="borderLine"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Times New Roman;
+      background: #fff;
+    }
+    .header {
+      width: 100%;
+      height: 7vh;
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    .header h1{
+      animation: anim 0.5s linear infinite;
+    }
+    @keyframes anim{
+      0%{
+        transform: translatex(0);
+      }
+      50%{
+        transform: translatex(6vw);
+      }
+    }
+  .header h1:hover{
+    animation: none;
+  }
+    .nav ul {
+      display: none;
+    }
+    .menu {
+      background: red;
+      margin-right: 10px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu, .line1,.line2,.line3 {
+      height: 3vh;
+      width: 9vw;
+      line-height: 7px;
+    }
+    .line1,.line2,.line3 {
+      height: 3vh;
+      width: 9vw;
+      background-color: black;
+      border: 1px solid black;
+    }
+    .menu:hover {
+      transform: rotate(45deg);
+    }
+    @media (min-width:600px) {
+      .nav ul {
+        display: flex;
+        gap: 20px;
+        font-size: 3vw;
+        font-weight: 700;
+      }
+      .nav ul li {
+        list-style: none;
+      }
+      .nav ul li a {
+        text-decoration: none;
+      }
+      .nav ul li a:hover{
+        border-bottom: 3px solid black;
+        color: white;
+      }
+      .header {
+        padding: 20px;
+        padding-right: 30px;
+        height: 5vh;
+        width: 100%;
+        background:red;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 5.5vw;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>sonu saxena</h1>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="menu">
+      <hr class="line1">
+      <br>
+      <hr class="line2">
+      <br>
+      <hr class="line3">
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>form</title>
+    <style>
+    body {
+      background-color:white ;
+      font-family: Times New Roman;
+    }
+    @keyframes anim {
+        0%{
+         background: red; 
+        }
+        8%{
+          background: white;
+          color: black;
+        }
+        16%{
+          background: aqua;
+        }
+        24%{
+          background: tomato;
+        }
+        32%{
+          background: yellow;
+        }
+        40%{
+          background: #00ffb0;
+          color: yellow;
+        }
+        48%{
+          background: #e07711;
+        }
+        56%{
+          background: #da0f0f;
+        }
+        64%{
+          background: #0ede74;
+        }
+        72%{
+          background: #1ad5e3;
+        }
+        80%{
+          background: #0f15ed;
+          color: white;
+        }
+        88%{
+          background: #e216cf;
+        }
+    }
+      h1  {
+        border: 2px solid black;
+        border-radius: 7px;
+        background-color: black;
+        font-family: Times New Roman;
+        color: blue ;
+         animation: anim 5s linear infinite;
+      }
+      form {
+        border: 2px solid grey;
+        border-radius: 4px;
+        background-color: #e3fde0;
+        padding: 10px;
+      } 
+      h2 {
+        font-family: Times New Roman;
+        text-shadow: 1px 2px 4px red;
+      }
+      .box {
+        width: 100%;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px #d1d1d1;
+      }
+      .sonu {
+        width: 80px;
+        padding: 6px;
+        background-color: green;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Student details</h1>
+    <br>
+    <form action="">
+      <h2>&nbsp;&nbsp;<u>Personal Details</u></h2>
+      <b>
+     First Name :
+     <br> 
+     <input type="text" placeholder="enter your first name" class="box">
+     <br><br>
+     Last Name :
+     <br>
+     <input type="text" placeholder="enter your last name" class="box">
+     <br>
+     <br>
+     Address :
+     <br>
+     <input type="text" placeholder="&nbsp; &nbsp; enter your address" class="box">
+     <br> <br>
+     Date of Birth :
+     <br>
+     <input type="date" class="box">
+     <br> <br>
+     State :
+     <select name="" id="" class="box">
+      <option value=""> Assam </option> 
+      <option value="">Bihar</option> 
+      <option value="">Maharashtra</option> 
+      <option value="">Uttar Pradesh</option> 
+      <option value="">Punjab</option> 
+     </select>
+     <br><br>
+     Gender :
+     <label for="id1">
+     <input type="radio" name="gender" value="male" class="male" id="id1">male 
+     </label>
+     <label for="id2">
+     <input type="radio" name="gender" value="female" class="male" id="id2">female </label>
+     <br> <br>
+     G-mail : <br>
+     <input type="email" placeholder="enter your email address" required="" class="box">
+     <br> <br>
+     <input type="submit" class="sonu"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="reset" class="sonu" value="reset">
+     </div>
+    </form>
+    <br><br>
+    
+  </body>
+</html>

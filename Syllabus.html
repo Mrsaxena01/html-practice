@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #ffff;
+      font-family: Times New Roman;
+    }
+    .header {
+      background: #7cb8fc;
+      display: flex;
+      gap: 20px;
+    }
+    .header_image {
+      height: 100px;
+      border-radius: 50%;
+      margin: 5px;
+    }
+    .head {
+      background: black;
+      height: 40px;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      overflow: hidden;
+    }
+    nav ul a {
+      color: white;
+      padding: 15px;
+      text-align: right;
+      text-decoration: none;
+      border-right: 2px solid blue;
+    }
+    nav ul a:hover {
+      color: red;
+    }
+    .title {
+      margin-top: 10px;
+    }
+    .into {
+      font-weight: 700;
+      text-shadow: 10px 0 5px gray;
+      font-size: 100%;
+    }
+    table {
+      width: 390px;
+      border: 0.5;
+      font-style: bold;
+    }
+    table tr td a {
+      text-decoration: none;
+    }
+    .sign {
+      margin-top: 50px;
+      background: #280240;
+      text-align: center;
+      font-weight: 709;
+      width: 270px;
+      padding: 8px;
+      border: 2px solid red;
+      color: white;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 30px;
+    }
+    .media {
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+    .imglast {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .footer {
+      background: #8c8282;
+      height: 100px;
+      width: 100%;
+      bottom: 0;
+    }
+    .searchbox {
+      display: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    @media (min-width:786px) {
+      .media {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 150px;
+      }
+      .searchbox {
+        display: inline;
+        margin-left: 50px;
+        height: 30px;
+      }
+      nav ul a {
+        padding-left: 70px;
+        padding-right: 50px;
+        border-right: 3px solid blue;
+        font-weight: 600;
+      }
+      .footer {
+        background: #8c8282;
+        height: 100px;
+        width: 100%;
+        bottom: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <nav>
+        <ul>
+          <a href="cse.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="#">Service</a>
+          <a href="#">Contact us</a>
+          <input type="search" placeholder="search here" class="searchbox">
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <img src="mypic.jpg" alt="my_pic" class="header_image">
+      <div class="title">
+        <h1>Welcome to <br><div style="color:red">
+          sonu saxena
+        </div>
+        </h1>
+      </div>
+    </div>
+    <br>
+    <div class="into">
+      <center>
+        <h1>Bihar Polytechnic <br> Syllabus</h1>
+      </center>
+    </div>
+    <br> <br> <br>
+    <center>
+      <a href="https://www.sbte.bihar.com">SBTE</a>
+      <br>
+      <br>
+      <p>
+        bihar Polytechnic Download new syllabus of all branches !
+      </p>
+    </center>
+
+
+    <div class="media">
+      <div>
+        <div class="sign">
+          Branch :- Computer sci. & Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="sign">
+          Branch :- Civil Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="sign">
+          Branch :- Electrical Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="sign">
+          Branch :- Mechanical Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="sign">
+          Branch :- Electronics Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="sign">
+          Branch :-Automobile Engg.
+        </div>
+        <div class="table">
+          <center>
+            <table border="1" cellspacing="3px" cellpadding="5px">
+              <tr bgcolor="yellow">
+                <th>S No.</th>
+                <th>Semester</th>
+                <th>Pdf</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>First semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Second semester</td>
+                <td><a href="2_4_1_2.pdf">Download</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Third semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Fourth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Fifth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sixth semester</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <center>
+        <img src="mypic.jpg" alt="pic" class="imglast">
+        <br><b> sonu saxena </b> <br>
+        copyright  &copy; 2022 sonusaxena.com
+        <br>
+        <ion-icon name="logo-facebook"></ion-icon>
+        &nbsp;
+        <ion-icon name="logo-instagram"></ion-icon>
+        &nbsp;
+        <ion-icon name="logo-twitter"></ion-icon>
+        &nbsp;
+        <ion-icon name="mail-unread-outline"></ion-icon>
+        &nbsp;
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </center>
+    </footer>
+  </body>
+</html>

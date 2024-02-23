@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>National Flag</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: #081b29;
+      display:flex;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .line {
+      margin-top: 10vh;
+      width: 5px;
+      height: 80vh;
+      background: #47e9ff;
+    }
+    .container{
+      margin-top: 10vh;
+/*   width: 350px;
+height: 270px; */
+    }
+    .orange {
+      width: 350px;
+      height: 90px;
+      background: orange;
+    }
+    .white {
+      width: 350px;
+      height: 90px;
+      background: white;
+      text-align: center;
+    }
+    .green {
+      width: 350px;
+      height: 90px;
+      background: green;
+    }
+    .text1{
+      margin: 5vh 5vw 1vh 12vw;
+      color: orange;
+      font-size: 10vw;
+      font-weight: 800;
+      font-family: Times New Roman;
+      transition: 1s;
+    }
+    .text2{
+      margin: 15vh 0vw 1vh 13vw;
+      color: white;
+      font-size: 10vw;
+      font-weight: 800;
+      font-family: Times New Roman;
+      transition:2s;
+      overflow: hidden;
+    }
+    .text3{
+      margin: 5vh 2vw 0vh 60vw;
+      color: green;
+      font-size: 10vw;
+      font-weight: 800;
+      font-family: Times New Roman;
+      transition:3.5s;
+      overflow: hidden;
+    }
+    img{
+      animation: anim 5s linear infinite;
+    }
+    @keyframes anim{
+      0%{
+        transform: rotate(360deg);
+      }
+     100%{
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="line"></div>
+  <div class="container">
+    <div class="orange"></div>
+    <div class="white"><img src="ashok.png" alt="" width="90px"></div>
+    <div class="green"></div>
+  
+  <div class="text1">Happy</div>
+  <span class="text2"></span> <br>
+  <span class="text3"></span>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typingEffect = new Typed(".text2",{
+      strings:["Independence"],
+      typeSpeed:100,
+      backSpeed:100,
+      backDelay:1100,
+      loop: true
+    });
+    var typingEffect = new Typed(".text3",{
+      strings:["Day"],
+      typeSpeed:100,
+      backSpeed:100,
+      backDelay:1200,
+      loop: true
+    });
+    var typingEffect = new Typed(".text1",{
+      strings:["Happy"],
+      typeSpeed:100,
+      backSpeed:100,
+      backDelay:1000,
+      loop: true
+    });
+  </script>
+</body>
+</html>
